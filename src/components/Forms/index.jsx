@@ -9,8 +9,9 @@ const Forms = () => {
 
 
     return (
-
+   
         <div id='container'>
+            <h2>Form</h2>
             <form action="" method="get" class="form">
                 <div class="form">
                     <label for="name">First name</label>

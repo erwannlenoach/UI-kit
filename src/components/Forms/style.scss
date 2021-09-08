@@ -7,6 +7,9 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxyge
 
 #container {
     display: grid;
+    button {
+        margin: 10px
+    }
 }
 
 .form {
