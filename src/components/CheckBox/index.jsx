@@ -1,16 +1,16 @@
 import React from 'react'
 import './style.scss'
 
-const ToggleButtons = () => {
+const CheckBox = () => {
 
     
 
     return (
         <div id='container'>
-            <h2>Toggle Buttons</h2>
+            <h2>Check boxes</h2>
             <div class="container">
                 <label class="switch">
-                    <input type="checkbox" />
+                    <input type="checkbox" id="checkbox" />
                     <span class="slider"></span>
                 </label>
             </div>
@@ -18,4 +18,4 @@ const ToggleButtons = () => {
     )
 }
 
-export default ToggleButtons
+export default CheckBox

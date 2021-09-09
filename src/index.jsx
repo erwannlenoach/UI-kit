@@ -3,14 +3,17 @@ import ReactDOM from 'react-dom';
 import Forms from './components/Forms'
 import Buttons from 'components/Buttons'
 import Navbar from 'components/Navbar';
-import ToggleButtons from 'components/ToggleButtons';
+import CheckBox from 'components/CheckBox';
+import 'styles/font.scss'
+import DropdownMenu from 'components/DropdownMenus';
 
 
 const App = () => {
   return <>
     <Navbar/>
+    <DropdownMenu/>
     <Buttons/>
-    <ToggleButtons/>
+    <CheckBox/>
     <Forms />
   </>
 
