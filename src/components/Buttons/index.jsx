@@ -10,14 +10,14 @@ const Buttons = () => {
         <div id='container'>
             <h2>Buttons</h2>
             <div class="container">
-                <button class="button" id="button-plain-red">{content}</button>
-                <button class="button" id="button-plain-blue">{content}</button>
-                <button class="button" id="button-plain-green">{content}</button>
+                <button class="button-plain-red">{content}</button>
+                <button class="button-plain-blue">{content}</button>
+                <button class="button-plain-green">{content}</button>
             </div>
             <div class="container">
-                <button class="button" id="button-transparent-red">{content}</button>
-                <button class="button" id="button-transparent-blue">{content}</button>
-                <button class="button" id="button-transparent-green">{content}</button>
+                <button class="button-transparent-red">{content}</button>
+                <button class="button-transparent-blue">{content}</button>
+                <button class="button-transparent-green">{content}</button>
             </div>
         </div>
 

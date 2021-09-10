@@ -4,8 +4,11 @@ import Forms from './components/Forms'
 import Buttons from 'components/Buttons'
 import Navbar from 'components/Navbar';
 import CheckBox from 'components/CheckBox';
-import 'styles/font.scss'
+import Cards from 'components/Cards';
+
 import DropdownMenu from 'components/DropdownMenus';
+
+import 'styles/font.scss'
 
 
 const App = () => {
@@ -15,6 +18,7 @@ const App = () => {
     <Buttons/>
     <CheckBox/>
     <Forms />
+    <Cards/>
   </>
 
 }

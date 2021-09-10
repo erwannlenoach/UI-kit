@@ -16,7 +16,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxyge
     padding: 10px;
 
     border-color: $border-color;
-    font-weight: bolder;
+    
 
     &:hover{
         background-color: $background-color-sec;
@@ -26,25 +26,25 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxyge
 
 }
 
-#button-plain-blue {
+.button-plain-blue {
     @include buttonPlain($background-color-pri: $blue-primary, $background-color-sec: $blue-secondary, $border-color:white, $color:white) 
 }
 
-#button-plain-red {
+.button-plain-red {
     @include buttonPlain($background-color-pri: $red-primary, $background-color-sec: $red-secondary, $border-color:white, $color:white) 
 }
- #button-plain-green {
+ .button-plain-green {
     @include buttonPlain($background-color-pri: $green-primary, $background-color-sec: $green-secondary, $border-color:white, $color:white) 
  }
 
- #button-transparent-blue {
+ .button-transparent-blue {
     @include buttonPlain($background-color-pri: white, $background-color-sec: $blue-primary, $border-color: $blue-primary, $color:$blue-primary,  $color-hover:white) 
 }
 
-#button-transparent-red {
+.button-transparent-red {
     @include buttonPlain($background-color-pri: white, $background-color-sec: $red-primary, $border-color:$red-primary, $color:$red-primary, $color-hover:white) 
 }
- #button-transparent-green {
+ .button-transparent-green {
     @include buttonPlain($background-color-pri: white, $background-color-sec: $green-primary, $border-color:$green-primary, $color:$green-primary,  $color-hover:white) 
  }
 
