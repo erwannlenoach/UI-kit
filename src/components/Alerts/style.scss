@@ -1,0 +1,64 @@
+@import 'styles/colors.scss';
+
+
+.alert-container {
+    display:flex;
+    flex-direction: column;
+    
+}
+
+@mixin alertText($font-weight){
+    margin: 10px;
+    font-weight: $font-weight;
+    text-align: left;
+
+}
+
+@mixin alert($background-color, $color) {
+    display: flex;
+    background-color:$background-color;
+    color: white;
+    padding: 0 10px 0 10px;
+    margin: 5px;
+    width: 50%;
+    height: 50px;
+    border-radius: 3px;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    .icon-alert {
+        color: white;
+        font-size: 30px
+        }
+      
+    div{
+        .title-alert{
+            @include alertText(bold)
+        }
+        .text-alert{
+            @include alertText(initial)
+        }
+    }  
+}
+
+
+#alert-primary {
+    @include alert($background-color: $blue-secondary, $color:white);
+}
+
+#alert-danger {
+    @include alert($background-color: $red-secondary, $color:white);
+}
+
+#alert-success {
+    @include alert($background-color: $green-secondary, $color:white);
+}
+
+
+
+
+
+
+  
+
+

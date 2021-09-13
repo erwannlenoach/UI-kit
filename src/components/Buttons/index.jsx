@@ -10,14 +10,24 @@ const Buttons = () => {
         <div id='container'>
             <h2>Buttons</h2>
             <div class="container">
-                <button class="button-plain-red">{content}</button>
-                <button class="button-plain-blue">{content}</button>
-                <button class="button-plain-green">{content}</button>
+                <button class="button-squared-red">{content}</button>
+                <button class="button-squared-blue">{content}</button>
+                <button class="button-squared-green">{content}</button>
             </div>
             <div class="container">
-                <button class="button-transparent-red">{content}</button>
-                <button class="button-transparent-blue">{content}</button>
-                <button class="button-transparent-green">{content}</button>
+                <button class="button-squared-red-sec">{content}</button>
+                <button class="button-squared-blue-sec">{content}</button>
+                <button class="button-squared-green-sec">{content}</button>
+            </div>
+            <div class="container">
+                <button class="button-rounded-red">{content}</button>
+                <button class="button-rounded-blue">{content}</button>
+                <button class="button-rounded-green">{content}</button>
+            </div>
+            <div class="container">
+                <button class="button-rounded-red-sec">{content}</button>
+                <button class="button-rounded-blue-sec">{content}</button>
+                <button class="button-rounded-green-sec">{content}</button>
             </div>
         </div>
 

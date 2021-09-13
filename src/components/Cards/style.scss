@@ -1,34 +1,58 @@
 @import 'styles/colors.scss';
 
 
-img {
-    width: 250px;
-    padding: 30px
-    
-}
 
-.card {
+@mixin cardTemplate($display, $width, $align-items) {
  
-    display: grid;
-    width: fit-content;
+    display: $display;
+    width: $width;
     justify-content: center;
     margin: 10px;
     border-radius: 10px;
-    background-color: lightgoldenrodyellow;
-    div {
+    &hover{
+        opacity: 05;
+    }
+    .img-card{
+        display: flex;
+        justify-content: center;
+        .img-item {
+            width: 250px;
+            padding-top: 30px;
+            border-radius: 3px
+            
+        }
+    }
+  
+    .card-text {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        max-width: 350px;
-       
+        align-items: $align-items;
+        #title-card {
+            margin: 0
+        }
+        #paragraph-card {
+            margin: 3px;
+        }
     }
 }
 
-#title-card {
-    margin: 0
+.card {
+    @include cardTemplate($display: grid, $width: 250px, $align-items: center)
+
 }
 
-#paragraph-card {
-    margin: 3px
+
+.card-detailed {
+    @include cardTemplate($display: flex, $width: fit-content, $align-items:left);
+    .card-text{
+        padding-left: 50px;
+        width: 50%;
+    }
+
+
 }
+
+
+
+

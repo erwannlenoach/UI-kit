@@ -1,5 +1,9 @@
 import React from 'react'
 import './style.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
+
+
 
 const Navbar = () => {
 
@@ -19,7 +23,8 @@ const Navbar = () => {
                 <div id="search-navbar">
                     <input type="text" id="search-navbar-input" placeholder="Your search" />
                 </div>
-                <button class="button-plain-blue">Download</button>
+                <button class="button-plain-blue"><span class="icon-alert"><FontAwesomeIcon icon={faDownload} /></span>
+</button>
             </nav>
         </div>
 
